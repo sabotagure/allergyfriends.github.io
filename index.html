@@ -3,40 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Product List</title>
 </head>
 <body>
-
     <header>
-        <h1>Welcome to Our Website</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
+                <li><a href="#" onclick="loadProducts('shoes')">Shoes</a></li>
+                <li><a href="#" onclick="loadProducts('clothes')">Clothes</a></li>
+                <li><a href="#" onclick="loadProducts('accessories')">Accessories</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <section class="product-list">
-            <h2>Product List</h2>
-            <ul>
-                <!-- Generate product links dynamically -->
-                <!-- You can use a server-side language like PHP or JavaScript for dynamic generation -->
-                <!-- For simplicity, static links are provided here -->
-                <?php
-                for ($i = 1; $i <= 50; $i++) {
-                    echo '<li><a href="#">Product ' . $i . '</a></li>';
-                }
-                ?>
-            </ul>
-        </section>
+        <div id="products">
+            <!-- Product items will be loaded here -->
+        </div>
     </main>
-
-    <footer>
-        <p>&copy; 2024 Your Company</p>
-    </footer>
-
+    
+    <script>
+        function loadProducts(category) {
+            // You can add the code to fetch and display products based on the category selected
+            // For this example, we'll just add some static product examples
+            if (category === 'shoes') {
+                document.getElementById('products').innerHTML = `
+                    <div class="product">
+                        <img src="shoe1.jpg" alt="Shoe 1">
+                        <h3>Running Shoe</h3>
+                        <p>$50</p>
+                    </div>
+                    <div class="product">
+                        <img src="shoe2.jpg" alt="Shoe 2">
+                        <h3>Casual Shoe</h3>
+                        <p>$40</p>
+                    `;
+            } else if (category === 'clothes') {
+                document.getElementById('products').innerHTML = `
+                    <div class="product">
+                        <img src="shirt1.jpg" alt="Shirt 1">
+                        <h3>T-Shirt</h3>
+                        <p>$20</p>
+                    </div>
+                    <div class="product">
+                        <img src="shirt2.jpg" alt="Shirt 2">
+                        <h3>Dress Shirt</h3>
+                        <p>$30</p>
+                    `;
+            } else if (category === 'accessories') {
+                document.getElementById('products').innerHTML = `
+                    <div class="product">
+                        <img src="hat1.jpg" alt="Hat 1">
+                        <h3>Sun Hat</h3>
+                        <p>$15</p>
+                    </div>
+                    <div class="product">
+                        <img src="watch1.jpg" alt="Watch 1">
+                        <h3>Wrist Watch</h3>
+                        <p>$100</p>
+                    `;
+            }
+        }
+    </script>
 </body>
 </html>
