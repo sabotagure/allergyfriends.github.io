@@ -7,7 +7,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f2f2f2;
+    color: #333;
 }
 
 header {
@@ -27,10 +28,15 @@ nav a {
     text-decoration: none;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 section {
-    padding: 2rem;
-    background-color: #fff;
-    margin: 2rem 0;
+    padding: 2rem 0;
+    text-align: center;
 }
 
 h1 {
