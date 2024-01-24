@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product List</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-list">
+            <h2>Product List</h2>
+            <ul>
+                <!-- Generate product links dynamically -->
+                <!-- You can use a server-side language like PHP or JavaScript for dynamic generation -->
+                <!-- For simplicity, static links are provided here -->
+                <?php
+                for ($i = 1; $i <= 50; $i++) {
+                    echo '<li><a href="#">Product ' . $i . '</a></li>';
+                }
+                ?>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Company</p>
+    </footer>
+
+</body>
+</html>
