@@ -59,6 +59,12 @@ body, html {
 }
 
 .category {
+  display: none;
   margin: 20px 0;
   text-align: center;
+}
+
+/* Additional CSS for showing the selected category */
+:target {
+  display: block;
 }
