@@ -5,26 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Fantastic Copywriting</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" onclick="toggleSection('about')">About</a></li>
+                <li><a href="#portfolio" onclick="toggleSection('portfolio')">Portfolio</a></li>
+                <li><a href="#services" onclick="toggleSection('services')">Services</a></li>
+                <li><a href="#testimonials" onclick="toggleSection('testimonials')">Testimonials</a></li>
+                <li><a href="#contact" onclick="toggleSection('contact')">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id="about">
+    <section id="about" class="hidden">
         <div class="container">
             <h1>About Me</h1>
             <p>Welcome to Fantastic Copywriting! I'm passionate about crafting compelling content that resonates with audiences. With a focus on creativity and quality, I aim to deliver copy that captivates and inspires.</p>
         </div>
     </section>
-    <section id="portfolio">
+    <section id="portfolio" class="hidden">
         <div class="container">
             <h1>Portfolio</h1>
             <div class="portfolio-item">
@@ -37,7 +42,7 @@
             </div>
         </div>
     </section>
-    <section id="services">
+    <section id="services" class="hidden">
         <div class="container">
             <h1>Services</h1>
             <ul>
@@ -47,7 +52,7 @@
             </ul>
         </div>
     </section>
-    <section id="testimonials">
+    <section id="testimonials" class="hidden">
         <div class="container">
             <h1>Testimonials</h1>
             <blockquote>
@@ -58,7 +63,7 @@
             </blockquote>
         </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="hidden">
         <div class="container">
             <h1>Contact Me</h1>
             <form>
@@ -74,5 +79,17 @@
             <p>&copy; 2024 Fantastic Copywriting</p>
         </div>
     </footer>
+
+    <script>
+        function toggleSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
 </body>
 </html>
