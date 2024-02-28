@@ -1,21 +1,18 @@
-function showProducts(item) {
-    // Clear previous product content
-    document.getElementById('products').innerHTML = '';
+const menuItems = {
+    burgers: ['Burger 1', 'Burger 2', 'Burger 3', 'Burger 4', 'Burger 5', 'Burger 6', 'Burger 7', 'Burger 8', 'Burger 9', 'Burger 10', 'Burger 11', 'Burger 12', 'Burger 13', 'Burger 14', 'Burger 15'],
+    sweets: ['Sweet 1', 'Sweet 2'],
+    sides: ['Side 1', 'Side 2', 'Side 3', 'Side 4', 'Side 5', 'Side 6', 'Side 7', 'Side 8'],
+    salads: ['Salad 1', 'Salad 2', 'Salad 3'],
+};
 
-    // Example products for each item
-    const products = {
-        item1: ['Product A', 'Product B', 'Product C'],
-        item2: ['Product X', 'Product Y', 'Product Z'],
-        item3: ['Product One', 'Product Two', 'Product Three'],
-        item4: ['Product Alpha', 'Product Beta', 'Product Gamma'],
-        item5: ['Product Apple', 'Product Banana', 'Product Orange']
-    };
+function showCategory(category) {
+    const categoryContent = document.getElementById('category-content');
+    categoryContent.innerHTML = '';
 
-    // Display products for the selected item
-    const productContainer = document.getElementById('products');
-    products[item].forEach(product => {
-        const productElement = document.createElement('div');
-        productElement.textContent = product;
-        productContainer.appendChild(productElement);
+    const categoryItems = menuItems[category];
+    categoryItems.forEach(item => {
+        const itemElement = document.createElement('div');
+        itemElement.textContent = item;
+        categoryContent.appendChild(itemElement);
     });
 }
