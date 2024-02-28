@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Basic Website</title>
+    <title>Allergy Website</title>
 </head>
 <body>
     <header>
-        <nav id="header-menu">
-            <ul>
-                <li><a href="#" onclick="showProducts('item1')">Item 1</a></li>
-                <li><a href="#" onclick="showProducts('item2')">Item 2</a></li>
-                <li><a href="#" onclick="showProducts('item3')">Item 3</a></li>
-                <li><a href="#" onclick="showProducts('item4')">Item 4</a></li>
-                <li><a href="#" onclick="showProducts('item5')">Item 5</a></li>
-            </ul>
-        </nav>
+        <h1>Allergy Menu</h1>
     </header>
-    <section id="products">
-        <!-- Product content will be displayed here -->
+    <nav id="menu">
+        <ul>
+            <li><a href="#" onclick="showCategory('burgers')">Burgers</a></li>
+            <li><a href="#" onclick="showCategory('sweets')">Sweets</a></li>
+            <li><a href="#" onclick="showCategory('sides')">Sides</a></li>
+            <li><a href="#" onclick="showCategory('salads')">Salads</a></li>
+        </ul>
+    </nav>
+    <section id="category-content">
+        <!-- Category content will be displayed here -->
     </section>
     <script src="script.js"></script>
 </body>
