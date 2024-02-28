@@ -12,7 +12,8 @@ function showCategory(category) {
     const categoryItems = menuItems[category];
     categoryItems.forEach(item => {
         const itemElement = document.createElement('div');
-        itemElement.textContent = item;
+        const formattedItem = item.replace(/ /g, ' - ');
+        itemElement.textContent = formattedItem;
         categoryContent.appendChild(itemElement);
     });
 }
