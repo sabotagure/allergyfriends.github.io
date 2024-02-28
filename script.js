@@ -1,5 +1,5 @@
 const menuItems = {
-    burgers: ['Burger 1', 'Burger 2', 'Burger 3', 'Burger 4', 'Burger 5', 'Burger 6', 'Burger 7', 'Burger 8', 'Burger 9', 'Burger 10', 'Burger 11', 'Burger 12', 'Burger 13', 'Burger 14', 'Burger 15'],
+    burgers: ['Friends             MAITO  KANANMUNA  GLUTEENI  SELLERI  SINAPPI', 'Cheese Onion             MAITO  KANANMUNA  GLUTEENI  SELLERI  SINAPPI', 'Classic             MAITO  KANANMUNA  GLUTEENI  SELLERI  SINAPPI', 'Aioli             MAITO  KANANMUNA  GLUTEENI  SINAPPI', 'Bacon             MAITO  KANANMUNA  GLUTEENI  SINAPPI', 'Umami             MAITO  KANANMUNA  GLUTEENI  SINAPPI  SOIJA', 'Chipotle             MAITO  KANANMUNA  GLUTEENI  SINAPPI', 'Kids             MAITO  KANANMUNA  GLUTEENI  SELLERI', 'Chicken Aioli             KANANMUNA  GLUTEENI  SINAPPI', 'Halloumi             MAITO  KANANMUNA  GLUTEENI  SINAPPI', 'Vegan             GLUTEENI  SINAPPI'],
     sweets: ['Sweet 1', 'Sweet 2'],
     sides: ['Side 1', 'Side 2', 'Side 3', 'Side 4', 'Side 5', 'Side 6', 'Side 7', 'Side 8'],
     salads: ['Salad 1', 'Salad 2', 'Salad 3'],
