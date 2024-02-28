@@ -1,7 +1,7 @@
 const menuItems = {
     burgers: ['Friends             MAITO  KANANMUNA  GLUTEENI  SELLERI  SINAPPI', 'Cheese Onion             MAITO  KANANMUNA  GLUTEENI  SELLERI  SINAPPI', 'Classic             MAITO  KANANMUNA  GLUTEENI  SELLERI  SINAPPI', 'Aioli             MAITO  KANANMUNA  GLUTEENI  SINAPPI', 'Bacon             MAITO  KANANMUNA  GLUTEENI  SINAPPI', 'Umami             MAITO  KANANMUNA  GLUTEENI  SINAPPI  SOIJA', 'Chipotle             MAITO  KANANMUNA  GLUTEENI  SINAPPI', 'Kids             MAITO  KANANMUNA  GLUTEENI  SELLERI', 'Chicken Aioli             KANANMUNA  GLUTEENI  SINAPPI', 'Halloumi             MAITO  KANANMUNA  GLUTEENI  SINAPPI', 'Vegan             GLUTEENI  SINAPPI'],
-    sweets: ['Sweet 1', 'Sweet 2'],
-    sides: ['Side 1', 'Side 2', 'Side 3', 'Side 4', 'Side 5', 'Side 6', 'Side 7', 'Side 8'],
+    sweets: ['Shakes             MAITO  LAKTOOSI  KANANMUNA', 'Jäätelö             MAITO  LAKTOOSI  KANANMUNA'],
+    sides: ['Chicken Fingers             KANANMUNA', 'Side Salad             Sinappi', 'Halloumi Fries             MAITO', 'Topped Fries             MAITO  SINAPPI  KANANMUNA', 'Truffle Fries             MAITO  SINAPPI  KANANMUNA  SOIJA'],
     salads: ['Crispy Chicken Ranch             MAITO  KANANMUNA  SINAPPI', 'Grilled Chicken             MAITO  KANANMUNA  SINAPPI', 'Halloumi             MAITO  KANANMUNA  SINAPPI'],
 };
 
