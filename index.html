@@ -4,77 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Fantastic Copywriting</title>
+    <title>Basic Website</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="header-menu">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" onclick="showProducts('item1')">Item 1</a></li>
+                <li><a href="#" onclick="showProducts('item2')">Item 2</a></li>
+                <li><a href="#" onclick="showProducts('item3')">Item 3</a></li>
+                <li><a href="#" onclick="showProducts('item4')">Item 4</a></li>
+                <li><a href="#" onclick="showProducts('item5')">Item 5</a></li>
             </ul>
         </nav>
     </header>
-    <section id="about" class="hidden">
-        <div class="container">
-            <h1>About Me</h1>
-            <p>Welcome to Fantastic Copywriting! I'm passionate about crafting compelling content that resonates with audiences. With a focus on creativity and quality, I aim to deliver copy that captivates and inspires.</p>
-        </div>
+    <section id="products">
+        <!-- Product content will be displayed here -->
     </section>
-    <section id="portfolio" class="hidden">
-        <div class="container">
-            <h1>Portfolio</h1>
-            <div class="portfolio-item">
-                <img src="project1.jpg" alt="Project 1">
-                <p>Description of Project 1 - This is where a brief description of the project would be placed, highlighting the objectives and outcomes.</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="project2.jpg" alt="Project 2">
-                <p>Description of Project 2 - Another brief description goes here, showcasing the impact and success of the project.</p>
-            </div>
-        </div>
-    </section>
-    <section id="services" class="hidden">
-        <div class="container">
-            <h1>Services</h1>
-            <ul>
-                <li>Website Copywriting</li>
-                <li>SEO Content Strategy</li>
-                <li>Brand Storytelling</li>
-            </ul>
-        </div>
-    </section>
-    <section id="testimonials" class="hidden">
-        <div class="container">
-            <h1>Testimonials</h1>
-            <blockquote>
-                "Working with Fantastic Copywriting was a game-changer for our brand. Their words brought our vision to life."
-            </blockquote>
-            <blockquote>
-                "I was impressed by the creativity and professionalism demonstrated in every piece of content delivered."
-            </blockquote>
-        </div>
-    </section>
-    <section id="contact" class="hidden">
-        <div class="container">
-            <h1>Contact Me</h1>
-            <form>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Fantastic Copywriting</p>
-        </div>
-    </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
